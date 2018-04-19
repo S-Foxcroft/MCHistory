@@ -1,0 +1,20 @@
+name: MCHistory
+version: 1.0.4
+author: JavaDev
+website: http://javadev.ml
+description: Use this to determine the username history of a player.
+
+main: ml.javadev.plugin.mchistory.PluginCore
+
+commands:
+  names:
+    description: The MCHistory lookup command.
+    aliases: lookup
+    permission: mchistory.lookup
+    usage: Try using /names <Username>!
+    
+permissions:
+  mchistory.lookup:
+    default: true
+  mchistory.uuid:
+    default: op
